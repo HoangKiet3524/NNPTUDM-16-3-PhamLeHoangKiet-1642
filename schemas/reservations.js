@@ -44,5 +44,7 @@ let reservationSchema = mongoose.Schema({
         type: Date,
         required: true
     }
+}, {
+    timestamps: true
 })
 module.exports = mongoose.model('reservation',reservationSchema)
